@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Saetas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-circle-container">
+        <div class="circle small" onclick="openPopup('popup-bio')"><i class="fas fa-info-circle"></i></div>
+        
+        <div class="circle large" onclick="openPopup('popup-marca')"><img src="logo-saetas.png" alt="Saetas"></div>
+        
+        <div class="circle small" onclick="openPopup('popup-mapa')"><i class="fas fa-map-marker-alt"></i></div>
+    </div>
+
+    <div id="popup-bio" class="popup"><div class="popup-content"><span class="close" onclick="closePopup()">×</span><h2>Quiénes somos</h2><p>Aquí tu texto de quiénes somos...</p></div></div>
+    <div id="popup-marca" class="popup"><div class="popup-content"><span class="close" onclick="closePopup()">×</span><h2>¿Qué significa Saetas?</h2><p>Explicación detallada de la marca...</p></div></div>
+    
+    <div id="popup-mapa" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">×</span>
+            <iframe src="TU_LINK_DE_MAPA" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div id="slideshow">
+        <div class="slide active" style="background-image: url('foto1.jpeg');"></div>
+        <div class="slide" style="background-image: url('foto2.jpeg');"></div>
+        <div class="slide" style="background-image: url('foto3.jpeg');"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

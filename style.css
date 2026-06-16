@@ -1,0 +1,19 @@
+body { background-color: #EDE0D4; color: #5D4037; display: flex; flex-direction: column; align-items: center; margin: 0; padding-top: 50px; }
+
+.main-circle-container { display: flex; align-items: center; gap: 30px; }
+.circle { border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.6); cursor: pointer; transition: 0.3s; }
+
+/* Tamaños */
+.large { width: 180px; height: 180px; }
+.small { width: 80px; height: 80px; font-size: 1.5rem; }
+.circle img { width: 80%; border-radius: 50%; }
+
+/* Slideshow - Ajustado para diapositivas */
+#slideshow { width: 80%; max-width: 600px; height: 400px; position: relative; margin-top: 50px; overflow: hidden; border-radius: 20px; }
+.slide { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease-in-out; }
+.slide.active { opacity: 1; }
+
+/* Popups */
+.popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; justify-content: center; align-items: center; }
+.popup-content { background: #EDE0D4; padding: 30px; border-radius: 20px; max-width: 400px; position: relative; }
+.close { position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 24px; }
