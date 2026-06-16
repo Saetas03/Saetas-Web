@@ -1,23 +1,23 @@
 body { background-color: #EDE0D4; color: #5D4037; display: flex; flex-direction: column; align-items: center; margin: 0; padding-top: 50px; font-family: sans-serif; }
 
-.main-circle-container { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; }
+.main-circle-container { display: flex; align-items: center; gap: 40px; margin-bottom: 80px; }
 
 .circle { border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.7); cursor: pointer; transition: 0.3s; text-decoration: none; color: #5D4037; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-.circle:hover { transform: scale(1.05); }
+.circle:hover { transform: scale(1.1); }
 
-/* Tamaños escalonados */
-.size-s { width: 90px; height: 90px; font-size: 1.8rem; }
-.size-m { width: 140px; height: 140px; font-size: 2.8rem; }
-.size-l { width: 230px; height: 230px; padding: 10px; }
+/* Tamaños aumentados */
+.size-s { width: 110px; height: 110px; font-size: 2.2rem; }
+.size-m { width: 170px; height: 170px; font-size: 3.2rem; }
+.size-l { width: 280px; height: 280px; padding: 10px; }
 
 .circle img { width: 90%; border-radius: 50%; }
 
 /* Slideshow */
-#slideshow { width: 80%; max-width: 700px; height: 400px; position: relative; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+#slideshow { width: 85%; max-width: 800px; height: 500px; position: relative; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 .slide { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out; }
 .slide.active { opacity: 1; }
 
 /* Popups */
 .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 100; justify-content: center; align-items: center; }
-.popup-content { background: #EDE0D4; padding: 40px; border-radius: 20px; max-width: 500px; position: relative; }
-.close { position: absolute; top: 15px; right: 20px; cursor: pointer; font-size: 30px; }
+.popup-content { background: #EDE0D4; padding: 50px; border-radius: 20px; max-width: 500px; position: relative; }
+.close { position: absolute; top: 20px; right: 25px; cursor: pointer; font-size: 40px; }

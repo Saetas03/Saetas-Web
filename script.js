@@ -11,5 +11,4 @@ function nextSlide() {
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
 }
-// Cambia de foto cada 4 segundos
 setInterval(nextSlide, 4000);
